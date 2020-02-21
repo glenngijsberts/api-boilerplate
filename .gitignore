@@ -1,0 +1,16 @@
+# project
+node_modules/
+.env
+.gitconfig
+
+# server
+.bash_history
+.bashrc
+.cache/
+.cloud-locale-test.skip
+.config/
+.npm/
+.pm2/
+.prisma/
+.profile
+.ssh/

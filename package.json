@@ -1,0 +1,38 @@
+{
+  "name": "api-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate to get started with Prisma & GraphQL Yoga",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon -e js,graphql --inspect src/index.js",
+    "deploy": "prisma deploy --env-file .env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glenngijsberts/api-boilerplate.git"
+  },
+  "keywords": [
+    "Prisma",
+    "GraphQL",
+    "Yoga",
+    "Node"
+  ],
+  "author": "Glenn Gijsberts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glenngijsberts/api-boilerplate/issues"
+  },
+  "homepage": "https://github.com/glenngijsberts/api-boilerplate#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "graphql-yoga": "^1.18.3",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "prisma-binding": "^2.3.16",
+    "prisma-client-lib": "^1.34.10"
+  }
+}
