@@ -31,6 +31,16 @@ yarn deploy || npm run deploy
 yarn dev || npm run dev
 ```
 
+This will start the GraphQL Yoga server at `:4000`. This will open the GraphQL Playground where you can check out the docs and schema.
+
+# Admin
+
+Check out the database/admin at `:4466/_admin`. You can generate a token with `prisma token`. You can inspect the Prisma server at `:4466`.
+
 # Security
 
 Warning: You need to setup security yourself, read more [here](https://www.prisma.io/docs/prisma-server/authentication-and-security-kke4/)
+
+# How does it work?
+
+Prisma and MySQL are running in Docker containers. The GraphQL Yoga server is running on top of the Prisma server, that serves as an ORM for the Yoga server. You will most likely make contact with the Yoga server at port `:4000`.
